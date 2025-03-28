@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <dl>
+        <img width='150' src="{{ movie.image.url }}" alt="{{ movie.title }}">
+        <dt>Title</dt>
+        <dd>{{ movie.title }}</dd>
+        <dt>Genre</dt>
+        <dd>{{ movie.genre }}</dd>
+        <dt>Stock</dt>
+        <dd>{{ movie.number_in_stock }}</dd>
+    </dl>
+{% endblock  %}
